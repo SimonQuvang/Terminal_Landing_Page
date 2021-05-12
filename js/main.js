@@ -14,16 +14,16 @@ about.addEventListener("click", () => {
 		bottom: 50,
 		left: 50,
 		mount: aboutContent,
-		onfocus: () => {
+		onfocus: function () {
 			this.setBackground("#00aa00");
 		},
-		onblur: () => {
+		onblur: function () {
 			this.setBackground("#777");
 		}
 	});
 });
 
-about.addEventListener("click", () => {
+contact.addEventListener("click", () => {
 	const contactBox = new WinBox({
 		title: "Contact Me",
 		background: "#00aa00",
@@ -35,10 +35,10 @@ about.addEventListener("click", () => {
 		left: 250,
 		mount: contactContent,
 
-		onfocus: () => {
+		onfocus: function () {
 			this.setBackground("#00aa00");
 		},
-		onblur: () => {
+		onblur: function () {
 			this.setBackground("#777");
 		}
 	});
